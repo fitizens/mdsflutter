@@ -33,9 +33,9 @@ class _ScanWidgetState extends State<ScanWidget> {
     if (!mounted) return;
 
     if (defaultTargetPlatform == TargetPlatform.android) {
-      Permission.locationWhenInUse.isUndetermined.then((value) =>
-          Permission.locationWhenInUse.request()
-      );
+      // Permission.locationWhenInUse.isUndetermined.then((value) =>
+      //     Permission.locationWhenInUse.request()
+      // );
 
       Permission.locationWhenInUse.isDenied.then((value) =>
           Permission.locationWhenInUse.request()
