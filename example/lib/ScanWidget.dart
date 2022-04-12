@@ -1,10 +1,11 @@
+import 'dart:async';
+
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'dart:async';
+import 'package:mdsflutter_example/AppModel.dart';
 import 'package:mdsflutter_example/Device.dart';
 import 'package:mdsflutter_example/DeviceConnectionStatus.dart';
 import 'package:mdsflutter_example/DeviceInteractionWidget.dart';
-import 'package:mdsflutter_example/AppModel.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:provider/provider.dart';
 
@@ -81,7 +82,7 @@ class _ScanWidgetState extends State<ScanWidget> {
             return Column(
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
-                RaisedButton(
+                ElevatedButton(
                   onPressed: onScanButtonPressed,
                   child: Text(model.scanButtonText),
                 ),

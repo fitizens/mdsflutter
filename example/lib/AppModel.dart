@@ -1,14 +1,12 @@
 
 import 'dart:collection';
-import 'dart:convert';
 
-import 'package:flutter/services.dart';
 import 'package:flutter/foundation.dart';
-import 'package:mdsflutter_example/Device.dart';
+import 'package:flutter/services.dart';
 import 'package:mdsflutter/Mds.dart';
+import 'package:mdsflutter_example/Device.dart';
 import 'package:mdsflutter_example/DeviceConnectionStatus.dart';
 
-import 'dart:developer' as developer;
 
 class AppModel extends ChangeNotifier {
 

@@ -1,6 +1,5 @@
 
 import 'package:mdsflutter_example/DeviceConnectionStatus.dart';
-import 'package:mdsflutter_example/DeviceModel.dart';
 
 class Device {
   String _address;

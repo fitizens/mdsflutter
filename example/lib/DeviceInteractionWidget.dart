@@ -1,9 +1,7 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:mdsflutter_example/Device.dart';
 import 'package:mdsflutter_example/DeviceModel.dart';
 import 'package:provider/provider.dart';
-
-import 'package:mdsflutter_example/Device.dart';
 
 import 'AppModel.dart';
 
@@ -80,7 +78,7 @@ class _DeviceInteractionWidgetState extends State<DeviceInteractionWidget> {
       child: ListTile(
         title: Text("Accelerometer"),
         subtitle: Text(deviceModel.accelerometerData),
-        trailing: RaisedButton(
+        trailing: ElevatedButton(
           child: Text(deviceModel.accelerometerSubscribed ? "Unsubscribe" : "Subscribe"),
           onPressed: () => _onAccelerometerButtonPressed(deviceModel),
         ),
@@ -93,7 +91,7 @@ class _DeviceInteractionWidgetState extends State<DeviceInteractionWidget> {
       child: ListTile(
         title: Text("Heart rate"),
         subtitle: Text(deviceModel.hrData),
-        trailing: RaisedButton(
+        trailing: ElevatedButton(
           child: Text(deviceModel.hrSubscribed ? "Unsubscribe" : "Subscribe"),
           onPressed: () => _onHrButtonPressed(deviceModel),
         ),
@@ -118,7 +116,7 @@ class _DeviceInteractionWidgetState extends State<DeviceInteractionWidget> {
       child: ListTile(
         title: Text("Temperature"),
         subtitle: Text(deviceModel.temperature),
-        trailing: RaisedButton(
+        trailing: ElevatedButton(
           child: Text("Get"),
           onPressed: () => deviceModel.getTemperature(),
         ),
