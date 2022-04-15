@@ -16,7 +16,7 @@ class RequestResult extends $pb.GeneratedMessage {
   factory RequestResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory RequestResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
   RequestResult clone() => RequestResult()..mergeFromMessage(this);
-  RequestResult copyWith(void Function(RequestResult) updates) => super.copyWith((message) => updates(message as RequestResult));
+  $pb.GeneratedMessage copyWith(void Function(RequestResult) updates) => super.copyWith((message) => updates(message as RequestResult));
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
   static RequestResult create() => RequestResult._();
@@ -24,7 +24,7 @@ class RequestResult extends $pb.GeneratedMessage {
   static $pb.PbList<RequestResult> createRepeated() => $pb.PbList<RequestResult>();
   @$core.pragma('dart2js:noInline')
   static RequestResult getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RequestResult>(create);
-  static RequestResult _defaultInstance;
+  static RequestResult? _defaultInstance;
 
   @$pb.TagNumber(1)
   $core.int get requestId => $_getIZ(0);
@@ -67,7 +67,7 @@ class RequestError extends $pb.GeneratedMessage {
   factory RequestError.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory RequestError.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
   RequestError clone() => RequestError()..mergeFromMessage(this);
-  RequestError copyWith(void Function(RequestError) updates) => super.copyWith((message) => updates(message as RequestError));
+  $pb.GeneratedMessage copyWith(void Function(RequestError) updates) => super.copyWith((message) => updates(message as RequestError));
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
   static RequestError create() => RequestError._();
@@ -75,7 +75,7 @@ class RequestError extends $pb.GeneratedMessage {
   static $pb.PbList<RequestError> createRepeated() => $pb.PbList<RequestError>();
   @$core.pragma('dart2js:noInline')
   static RequestError getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RequestError>(create);
-  static RequestError _defaultInstance;
+  static RequestError? _defaultInstance;
 
   @$pb.TagNumber(1)
   $core.int get requestId => $_getIZ(0);
@@ -117,7 +117,7 @@ class Notification extends $pb.GeneratedMessage {
   factory Notification.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory Notification.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
   Notification clone() => Notification()..mergeFromMessage(this);
-  Notification copyWith(void Function(Notification) updates) => super.copyWith((message) => updates(message as Notification));
+  $pb.GeneratedMessage copyWith(void Function(Notification) updates) => super.copyWith((message) => updates(message as Notification));
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
   static Notification create() => Notification._();
@@ -125,7 +125,7 @@ class Notification extends $pb.GeneratedMessage {
   static $pb.PbList<Notification> createRepeated() => $pb.PbList<Notification>();
   @$core.pragma('dart2js:noInline')
   static Notification getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Notification>(create);
-  static Notification _defaultInstance;
+  static Notification? _defaultInstance;
 
   @$pb.TagNumber(1)
   $core.int get subscriptionId => $_getIZ(0);
@@ -159,7 +159,7 @@ class NotificationError extends $pb.GeneratedMessage {
   factory NotificationError.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory NotificationError.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
   NotificationError clone() => NotificationError()..mergeFromMessage(this);
-  NotificationError copyWith(void Function(NotificationError) updates) => super.copyWith((message) => updates(message as NotificationError));
+  $pb.GeneratedMessage copyWith(void Function(NotificationError) updates) => super.copyWith((message) => updates(message as NotificationError));
   $pb.BuilderInfo get info_ => _i;
   @$core.pragma('dart2js:noInline')
   static NotificationError create() => NotificationError._();
@@ -167,7 +167,7 @@ class NotificationError extends $pb.GeneratedMessage {
   static $pb.PbList<NotificationError> createRepeated() => $pb.PbList<NotificationError>();
   @$core.pragma('dart2js:noInline')
   static NotificationError getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<NotificationError>(create);
-  static NotificationError _defaultInstance;
+  static NotificationError? _defaultInstance;
 
   @$pb.TagNumber(1)
   $core.int get subscriptionId => $_getIZ(0);

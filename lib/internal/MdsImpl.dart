@@ -21,7 +21,7 @@ class MdsImpl {
   Map _notifyCbMap = Map<int, void Function(String)>();
   Map _subscriptionErrorCbMap = Map<int, void Function(String, int)>();
   Map _serialToAddressMap = Map<String, String>();
-  void Function(String, String) _newScannedDeviceCb;
+  void Function(String, String)? _newScannedDeviceCb;
 
   void startScan(void Function(String, String) onNewDeviceFound) {
     _newScannedDeviceCb = onNewDeviceFound;
@@ -204,7 +204,6 @@ class MdsImpl {
         Map args = call.arguments;
         _onConnect(args["address"], args["serial"]);
         break;
-        break;
       case "onDisconnect":
         String address = call.arguments;
         _onDisconnect(address);
@@ -238,7 +237,7 @@ class MdsImpl {
 
   void _onNewScannedDevice(String name, String address) {
     if (_newScannedDeviceCb != null) {
-      _newScannedDeviceCb(name, address);
+      _newScannedDeviceCb!(name, address);
     }
   }
 
